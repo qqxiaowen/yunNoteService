@@ -12,7 +12,8 @@ router.get('/getToken',(req,res) => {
     };
     var putPolicy = new qiniu.rs.PutPolicy(options);
     var uploadToken=putPolicy.uploadToken(mac);
-    console.log(uploadToken)
+    // console.log(uploadToken)
+    res.header('Access-Control-Allow-Origin','*') //设置cors跨域
     res.json({
         code:200,
         data:uploadToken
