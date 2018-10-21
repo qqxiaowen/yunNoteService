@@ -3,8 +3,8 @@ const router = Router()
 const qiniu =  require('qiniu')
 
 router.get('/getToken',(req,res) => {
-    var accessKey = 'tm5nyRWCdbnHxV6GeQC88gOcpTXCG3OX9YU024XZ';
-    var secretKey = 'ecNxbd-OVRBhT-d9aQbovtX_OjyqrxE0kzYnXgni';
+    var accessKey = 'xxx';
+    var secretKey = 'xxx';
     var mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
     var options = {
         scope: 'yunnote',
